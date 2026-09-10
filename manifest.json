@@ -1,0 +1,14 @@
+{
+  "name": "จ๋าช่วยคิดเงินให้ถูก",
+  "short_name": "คิดเงินให้ถูก",
+  "description": "จ๋าช่วยคิดเงินให้ถูก — ระบบตรวจนับเงินสด",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F7F7F9",
+  "theme_color": "#A874F5",
+  "orientation": "portrait",
+  "icons": [
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
