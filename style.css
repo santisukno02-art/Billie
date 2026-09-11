@@ -15,3 +15,65 @@ button:disabled{cursor:wait;opacity:.65}
 .session-box button{padding:5px 8px;border-radius:7px}
 .session-box button:hover{background:var(--soft);color:var(--p2)}
 .keypad button{transition:transform .1s ease,background .1s ease,box-shadow .1s ease}.keypad button:active{box-shadow:inset 0 2px 4px #0001}
+
+
+/* ===== Readability & Logout UI refinement ===== */
+html,body{font-family:Kanit,system-ui,sans-serif}
+body{font-size:14px}
+.app{max-width:660px;padding-left:16px;padding-right:16px}
+.brand-text h1{font-size:18px;font-weight:600;line-height:1.35}
+.brand-text p{font-size:11px;font-weight:400}
+.session-box{min-width:76px}
+.session-box strong{font-size:14px;font-weight:600;line-height:1.25}
+.session-box button#logoutBtn{display:inline-flex;align-items:center;justify-content:center;min-width:72px;height:34px;margin-top:4px;padding:0 13px;border:1px solid #d8d4dd;border-radius:9px;background:#fff;color:#3d3a44;font:500 12px/1 Kanit,sans-serif;letter-spacing:.2px;box-shadow:0 1px 2px #0000000a;transition:transform .12s ease,background .12s ease,border-color .12s ease,box-shadow .12s ease}
+.session-box button#logoutBtn:hover{background:#f6f1ff;border-color:#cbb8ed;color:var(--p2);box-shadow:0 3px 9px #0000000c}
+.session-box button#logoutBtn:active{transform:translateY(1px) scale(.96);background:var(--soft);box-shadow:inset 0 2px 4px #00000012}
+.intro{align-items:center}
+.eyebrow{font-size:10px;letter-spacing:1.7px}
+.intro h2{font-size:27px;font-weight:600;line-height:1.25}
+.intro p{font-size:11px;line-height:1.5}
+.outline-btn{font:500 11px Kanit,sans-serif;padding:10px 13px;min-height:38px}
+.round-card{padding:17px;border-radius:18px}
+.round-title{gap:10px}
+.round-no{width:34px;height:34px;font-size:15px}
+.round-title h3{font-size:16px;font-weight:600;line-height:1.35}
+.round-title p{font-size:10px;line-height:1.45}
+.round-total small{font-size:9px}
+.round-total strong{font-size:20px;font-weight:600}
+.round-total em{font-size:9px}
+.target-row{padding:11px 12px}
+.target-row label{font-size:11px;font-weight:400}
+input{font:400 13px Kanit,sans-serif}
+.money-list{gap:6px}
+.list-label{font-size:11px;font-weight:500;color:#77727f;margin-top:5px;margin-bottom:2px}
+.money-row{min-height:49px;padding:6px 8px 6px 12px;border-radius:12px}
+.denom{font-size:14px;font-weight:500;width:84px;line-height:1.3}
+.unit{font-size:10px;margin-left:3px}
+.row-amount{font-size:11px;font-weight:400}
+.counter{gap:5px}
+.counter button{width:36px;height:36px;font-size:20px;font-family:Kanit,sans-serif}
+.counter input{width:48px;height:36px;font-size:13px;font-weight:500}
+.grand-card{padding:23px 19px;border-radius:19px}
+.grand-label{font-size:12px;font-weight:400}
+.grand-total span{font-size:38px;font-weight:600}
+.grand-total small{font-size:12px}
+.breakdown div{font-size:10px}
+.no-save-note{font-size:11px}
+footer{font-size:9px}
+
+@media(max-width:520px){
+  .app{padding-left:12px;padding-right:12px}
+  .app-header{gap:8px;padding-top:12px}
+  .logo-wrap{width:46px;height:46px}
+  .brand-text h1{font-size:17px}
+  .session-box{min-width:72px}
+  .session-box strong{font-size:13px}
+  .session-box button#logoutBtn{min-width:68px;height:33px;font-size:12px}
+  .intro h2{font-size:25px}
+  .round-card{padding:14px}
+  .money-row{min-height:47px;padding-left:10px}
+  .denom{width:80px;font-size:13px}
+  .row-amount{font-size:10px}
+  .counter button{width:35px;height:35px}
+  .counter input{width:45px;height:35px}
+}
